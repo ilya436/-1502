@@ -158,13 +158,13 @@ footer {
             .sectiona {
                 font-size: 15px;
                 height: 75px;
-                width: 314.5px;
+                width: 314px;
                 display: grid;
                 gap: 10px;
                 justify-content: space-between; 
                 background-color: #ffe9e9;
-                margin-bottom: 20ppx;
                 margin-bottom: 20px;
+                margin-right: 5px;
                 background: #ffffff;
                 padding: 15px;
                 border-radius: 8px;
@@ -184,46 +184,6 @@ footer {
                 text-overflow: ellipsis;
                 width: 300px; /* Установите нужную ширину */
             }
-@media (max-width: 768px) {
-    body {
-        font-size: 16px; /* Увеличиваем шрифт для удобства чтения */
-    }
-
-    .container {
-        width: 95%; /* Уменьшаем ширину контейнера */
-        padding: 10px; /* Добавляем отступы */
-    }
-
-    header {
-        text-align: center; /* Центрируем заголовок */
-    }
-
-    nav {
-        display: flex; /* Используем flexbox для навигации */
-        flex-direction: column; /* Вертикальное расположение элементов */
-    }
-
-    nav a {
-        padding: 10px; /* Увеличиваем область нажатия */
-        text-align: center; /* Центрируем текст */
-    }
-
-    .grid {
-        display: grid; /* Используем grid для адаптивной сетки */
-        grid-template-columns: 1fr; /* Одна колонка на мобильных устройствах */
-    }
-}
-
-/* Дополнительные стили для очень маленьких экранов */
-@media (max-width: 480px) {
-    body {
-        font-size: 14px; /* Уменьшаем шрифт для очень маленьких экранов */
-    }
-
-    nav a {
-        font-size: 14px; /* Уменьшаем размер шрифта в навигации */
-    }
-}
             
 
 
