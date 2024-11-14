@@ -127,26 +127,3 @@ footer {
     width: 100%; /* Изменено для адаптивности */
 }
 
-/* Медиа-запросы для мобильных устройств */
-@media (max-width: 768px) {
-    header {
-        padding: 15px 0;
-    }
-
-    .grid-section {
-        grid-template-columns: repeat(2, 1fr); /* Две колонки на мобильных */
-    }
-
-    .section {
-        width: 100%; /* Полная ширина для секций */
-    }
-
-    .textii {
-        flex-direction: column; /* Вертикальное выравнивание для мобильных */
-        align-items: flex-start;
-    }
-
-    .texti {
-        margin-right: 0; /* Убираем отступ для мобильных */
-    }
-}
