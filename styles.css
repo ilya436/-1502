@@ -49,7 +49,6 @@ body {
     background-color: #ffe9e9 
 }
 
-/* Заголовки */
 h1, h2, h3, h4, h5, h6 { 
     color: #000000;
     margin-bottom: 15px;
@@ -78,7 +77,6 @@ a:hover {
     border-radius: 8px; 
 }
 
-/* Кнопки */
 .button {
     display: inline-block;
     padding: 10px 20px;
@@ -123,42 +121,42 @@ img {
 }
 @media (max-width: 768px) {
     body {
-        font-size: 16px; /* Увеличиваем шрифт для удобства чтения */
+        font-size: 16px; 
     }
 
     .container {
-        width: 95%; /* Уменьшаем ширину контейнера */
-        padding: 10px; /* Добавляем отступы */
+        width: 95%; 
+        padding: 10px; 
     }
 
     header {
-        text-align: center; /* Центрируем заголовок */
+        text-align: center; 
     }
 
     nav {
-        display: flex; /* Используем flexbox для навигации */
-        flex-direction: column; /* Вертикальное расположение элементов */
+        display: flex; 
+        flex-direction: column;
     }
 
     nav a {
-        padding: 10px; /* Увеличиваем область нажатия */
-        text-align: center; /* Центрируем текст */
+        padding: 10px;
+        text-align: center;
     }
 
     .grid {
-        display: grid; /* Используем grid для адаптивной сетки */
-        grid-template-columns: 1fr; /* Одна колонка на мобильных устройствах */
+        display: grid; 
+        grid-template-columns: 1fr;
     }
 }
 
-/* Дополнительные стили для очень маленьких экранов */
+
 @media (max-width: 480px) {
     body {
-        font-size: 14px; /* Уменьшаем шрифт для очень маленьких экранов */
+        font-size: 14px;
     }
 
     nav a {
-        font-size: 14px; /* Уменьшаем размер шрифта в навигации */
+        font-size: 14px;
     }
 }
 
