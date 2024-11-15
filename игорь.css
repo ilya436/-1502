@@ -182,7 +182,7 @@ footer {
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                width: 300px; /* Установите нужную ширину */
+                width: 300px; 
             }
             
 
