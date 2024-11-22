@@ -5,45 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>И.Х</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        const heroes = [
+            { name: 'Анти Маг', img: 'C:\Users\Administrator\Desktop\норм\Alchemist_icon.webp', link: 'анти маг.html' },
+            { name: 'Алхимик', img: 'Alchemist_icon.webp', link: 'алхимик.html' },
+            { name: 'ЦК', img: 'Chaos_Knight_icon.webp', link: 'цк.html' },
+            { name: 'Гуля', img: 'Lifestealer_icon.webp', link: 'гуля.html' },
+            { name: 'Свен', img: 'Sven_icon.webp', link: 'свен.html' },
+            { name: 'Муерта', img: 'Muerta_icon.webp', link: 'муерта.html' },
+           
+        ];
+
+        function loadGallery() {
+            const galleryDiv = document.getElementById('gallery');
+            heroes.forEach(hero => {
+                const a = document.createElement('a');
+                a.href = hero.link;
+                const img = document.createElement('img');
+                img.src = hero.img;
+                img.alt = hero.name;
+                a.appendChild(img);
+                galleryDiv.appendChild(a);
+            });
+        }
+
+        window.onload = loadGallery;
+    </script>
 </head>
 <body>
     <header>
-        <h1>Выберите версонажа</h1>
+        <h1>Выберите персонажа</h1>
     </header>
     <main>
-        <div class="gallery">
-            <a href="анти маг.html"><img src="норм/Anti-Mage_icon.webp"></a>
-            <a href="алхимик.html"><img src="норм/Alchemist_icon.webp" alt="алхимик"></a>
-            <a href="цк.html"><img src="норм/Chaos_Knight_icon.webp" alt="цк"></a>
-            <a href="гуля.html"><img src="норм/Lifestealer_icon.webp" alt="гуля"></a>
-            <a href="свен.html"><img src="норм/Sven_icon.webp" alt="свен"></a>
-            <a href="муерта.html"><img src="норм/Muerta_icon.webp" alt="муерта"></a>
-            <a href="тракса.html"><img src="норм/Drow_Ranger_icon.webp" alt="дров ренджер"></a>
-            <a href="фасилис.html"><img src="норм/Faceless_Void_icon.webp" alt="фасилис"></a>
-            <a href="гиро.html"><img src="норм/Gyrocopter_icon.webp" alt="гиро"></a>
-            <a href="C:\Users\Administrator\Desktop\сайт И.Х\джагер.html"><img src="норм/Juggernaut_icon.webp" alt="джагер"></a>
-            <a href="луна.html"><img src="норм/Luna_icon.webp" alt="луна"></a>
-            <a href="медуза.html"><img src="норм/Medusa_icon.webp" alt="медуза"></a>
-            <a href="мк.html"><img src="норм/Monkey_King_icon.webp" alt="мк"></a>
-            <a href="морф.html"><img src="норм/Morphling_icon.webp" alt="морф"></a>
-            <a href="нага.html"><img src="норм/Naga_Siren_icon.webp" alt="нага"></a>
-            <a href="мортра.html"><img src="норм/Phantom_Assassin_icon.webp" alt="мортра"></a>
-            <a href="пл.html"><img src="норм/Phantom_Lancer_icon.webp" alt="пл"></a>
-            <a href="рики.html"><img src="норм/Riki_icon.webp" alt="рики"></a>
-            <a href="сф.html"><img src="норм/Shadow_Fiend_icon.webp" alt="сф"></a>
-            <a href="сларк.html"><img src="норм/Slark_icon.webp" alt="сларк"></a>
-            <a href="спектра.html"><img src="норм/Spectre_icon.webp" alt="спектра"></a>
-            <a href="тб.html"><img src="норм/Terrorblade_icon.webp" alt="тб"></a>
-            <a href="троль.html"><img src="норм/Troll_Warlord_icon.webp" alt="троль"></a>
-            <a href="урса.html"><img src="норм/Ursa_icon.webp" alt="урса"></a>
-            <a href="вивер.html"><img src="норм/Weaver_icon.webp" alt="вивер"></a>
-            <a href="врка.html"><img src="норм/Windranger_icon.webp" alt="врка"></a>
-            <a href="блудсикер.html"><img src="норм/Bloodseeker_icon.webp" alt="блудсикер"></a>
-            <a href="лина.html"><img src="норм/Lina_icon.webp" alt="лина"></a>
-            <a href="ланая.html"><img src="норм/Templar_Assassin_icon.webp" alt="ланая"></a>
-            <a href="дк.html"><img src="норм/Dragon_Knight_icon.webp" alt="дк"></a>
-            <a href="вк.html"><img src="норм/Wraith_King_icon.webp" alt="вк"></a>
-            <a href="снайпер.html"><img src="норм/Sniper_icon.webp" alt="снайпер"></a>
+        <div id="gallery" class="gallery">
+            <img src="Anti-Mage_icon.webp" alt="Анти маг">  
         </div>
     </main>
 </body>
