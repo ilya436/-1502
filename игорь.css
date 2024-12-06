@@ -52,7 +52,7 @@ h3 {
 .image-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
+   
     margin: 20px; 
     gap: 10px;
     width: 1200px;
