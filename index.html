@@ -1,65 +1,112 @@
- 
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сборка на Анти-мага</title>
+    <title>Анти-маг</title>
     <link rel="stylesheet" href="игорь.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+             
+    </style>
 </head>
 <body>
-    <main>
-    </head>
-    <body>
-        <section>
-        <h1 align="center">Анти-маг</h1>
-        </section>
-        <section>
-            <h2>Кто такой Анти-маг?</h2>
-            <p>Анти Маг — это герой, который специализируется на борьбе с эффектом выжигания маны. </p>
-        </section > 
-            <div class="container">
-                <div class="sectiona">
-                    <h2 align='center' class="single-line">Начальные предеметы</h2>
+
+<div class="image-container">
+    <img src="C:\Users\Administrator\Desktop\норм\Alchemist_icon.webp" alt="Image 1" class="rounded-image" onclick="showStructure(1)">
+    <img src="C:\Users\Administrator\Desktop\норм\Anti-Mage_icon.webp" alt="Image 2" class="rounded-image" onclick="showStructure(2)">
+    <img src="C:\Users\Administrator\Desktop\норм\Bloodseeker_icon.webp" alt="Image 3" class="rounded-image" onclick="showStructure(3)">
+    <img src="C:\Users\Administrator\Desktop\норм\Chaos_Knight_icon.webp" alt="Image 1" class="rounded-image" onclick="showStructure(4)">
+    <img src="C:\Users\Administrator\Desktop\норм\Dragon_Knight_icon.webp" alt="Image 2" class="rounded-image" onclick="showStructure(5)">
+    <img src="C:\Users\Administrator\Desktop\норм\Drow_Ranger_icon.webp" alt="Image 3" class="rounded-image" onclick="showStructure(6)">
+    <img src="C:\Users\Administrator\Desktop\норм\Faceless_Void_icon.webp" alt="Image 1" class="rounded-image" onclick="showStructure(7)">
+    <img src="C:\Users\Administrator\Desktop\норм\Gyrocopter_icon.webp" alt="Image 2" class="rounded-image" onclick="showStructure(8)">
+    <img src="C:\Users\Administrator\Desktop\норм\Juggernaut_icon.webp" alt="Image 3" class="rounded-image" onclick="showStructure(9)">
+    <img src="C:\Users\Administrator\Desktop\норм\Lifestealer_icon.webp" alt="Image 1" class="rounded-image" onclick="showStructure(10)">
+    <img src="C:\Users\Administrator\Desktop\норм\Lina_icon.webp" alt="Image 2" class="rounded-image" onclick="showStructure(11)">
+    <img src="C:\Users\Administrator\Desktop\норм\Luna_icon.webp" alt="Image 3" class="rounded-image" onclick="showStructure(12)">
+    <img src="C:\Users\Administrator\Desktop\норм\Medusa_icon.webp" alt="Image 1" class="rounded-image" onclick="showStructure(13)">
+    <img src="C:\Users\Administrator\Desktop\норм\Monkey_King_icon.webp" alt="Image 2" class="rounded-image" onclick="showStructure(14)">
+    <img src="C:\Users\Administrator\Desktop\норм\Morphling_icon.webp" alt="Image 3" class="rounded-image" onclick="showStructure(15)">
+    <img src="C:\Users\Administrator\Desktop\норм\Muerta_icon.webp" alt="Image 1" class="rounded-image" onclick="showStructure(16)">
+    <img src="C:\Users\Administrator\Desktop\норм\Naga_Siren_icon.webp" alt="Image 2" class="rounded-image" onclick="showStructure(17)">
+    <img src="C:\Users\Administrator\Desktop\норм\Phantom_Assassin_icon.webp" alt="Image 3" class="rounded-image" onclick="showStructure(18)">
+    <img src="C:\Users\Administrator\Desktop\норм\Phantom_Lancer_icon.webp" alt="Image 3" class="rounded-image" onclick="showStructure(19)">
+    <img src="C:\Users\Administrator\Desktop\норм\Riki_icon.webp" alt="Image 1" class="rounded-image" onclick="showStructure(20)">
+    <img src="C:\Users\Administrator\Desktop\норм\Shadow_Fiend_icon.webp" alt="Image 2" class="rounded-image" onclick="showStructure(21)">
+    <img src="C:\Users\Administrator\Desktop\норм\Slark_icon.webp" alt="Image 3" class="rounded-image" onclick="showStructure(22)">
+    <img src="C:\Users\Administrator\Desktop\норм\Sniper_icon.webp" alt="Image 1" class="rounded-image" onclick="showStructure(23)">
+    <img src="C:\Users\Administrator\Desktop\норм\Spectre_icon.webp" alt="Image 2" class="rounded-image" onclick="showStructure(24)">
+    <img src="C:\Users\Administrator\Desktop\норм\Sven_icon.webp" alt="Image 3" class="rounded-image" onclick="showStructure(25)">
+    <img src="C:\Users\Administrator\Desktop\норм\Templar_Assassin_icon.webp" alt="Image 3" class="rounded-image" onclick="showStructure(26)">
+    <img src="C:\Users\Administrator\Desktop\норм\Terrorblade_icon.webp" alt="Image 1" class="rounded-image" onclick="showStructure(27)">
+    <img src="C:\Users\Administrator\Desktop\норм\Troll_Warlord_icon.webp" alt="Image 2" class="rounded-image" onclick="showStructure(28)">
+    <img src="C:\Users\Administrator\Desktop\норм\Ursa_icon.webp" alt="Image 3" class="rounded-image" onclick="showStructure(29)">
+    <img src="C:\Users\Administrator\Desktop\норм\Weaver_icon.webp" alt="Image 1" class="rounded-image" onclick="showStructure(30)">
+    <img src="C:\Users\Administrator\Desktop\норм\Windranger_icon.webp" alt="Image 2" class="rounded-image" onclick="showStructure(31)">
+    <img src="C:\Users\Administrator\Desktop\норм\Wraith_King_icon.webp" alt="Image 3" class="rounded-image" onclick="showStructure(32)">
+</div>
+
+<div id="structure" class="hidden"></div>
+
+<script>
+    function showStructure(imageId) {
+        // Скрыть картинки
+        document.querySelector('.image-container').classList.add('hidden');
+
+        // Показать структуру в зависимости от нажатой картинки
+        let structureHtml = '';
+
+        if (imageId === 1) {
+            structureHtml = `
+                 <section>
+                <h1 align="center">Анти-маг</h1>
+                </section>
+                <section>
+                    <h2>Кто такой Анти-маг?</h2>
+                    <p>Анти Маг — это герой, который специализируется на борьбе с эффектом выжигания маны. </p>
+                </section > 
+                    <div class="container">
+                        <div class="sectiona">
+                            <h2 align='center' class="text-center">Начальные предеметы</h2>
+                        </div>
+                        <div class="sectiona">
+                            <h2 align='center' class="text-center">Основные предеметы</h2>
+                        </div>
+                        <div class="sectiona">
+                            <h2 align='center' class="text-center">Ситуативные предеметы</h2>
+                        </div>
+                    </div>          
+                <div class="container">
+                    <div class="section grid-section">
+                        <img src="предметы\Iron_Branch_icon.webp" alt="Image 1" > 
+                        <img src="предметы\tango.jpg" alt="Image 2" >
+                        <img src="предметы\Iron_Branch_icon.webp" alt="Image 3" >
+                        <img src="предметы\quelling_blade.jpg" alt="Image 4" >
+                        <img src="предметы\slippers_of_agility.jpg" alt="Image 5" >
+                        <img src="предметы\circlet.jpg" alt="Image 6" >
+                    </div>
+            
+                    <div class="section grid-section">
+                        <img src="предметы\Power_Treads_icon.webp" alt="Image 10" >
+                        <img src="предметы\Battle_Fury_icon.webp" alt="Image 7" >
+                        <img src="предметы\Manta_Style_icon.webp" alt="Image 8" >
+                        <img src="предметы\Butterfly_icon.webp" alt="Image 9" >
+                        <img src="предметы\Abyssal_Blade_icon.webp" alt="Image 11" >
+                        <img src="предметы\Satanic_icon.webp" alt="Image 12" >
+                    </div>
+            
+                    <div class="section grid-section">
+                        <img src="предметы\Black_King_Bar_icon.webp" alt="Image 13" >
+                        <img src="предметы\Bloodthorn_icon.webp" alt="Image 14" >
+                        <img src="предметы\Monkey_King_Bar_icon.webp" alt="Image 15" >
+                        <img src="предметы\Eye_of_Skadi_icon.webp" alt="Image 16" >
+                        <img src="предметы\Diffusal_Blade_1_icon.webp" alt="Image 17" >
+                    </div>
                 </div>
-                <div class="sectiona">
-                    <h2 align='center' class="single-line">Основные предеметы</h2>
-                </div>
-                <div class="sectiona">
-                    <h2 align='center' class="single-line">Ситуативные предеметы</h2>
-                </div>
-            </div>          
-        <div class="container">
-            <div class="section grid-section">
-                <img src="предметы\Iron_Branch_icon.webp" alt="Image 1" class=rounded-image> 
-                <img src="предметы\tango.jpg" alt="Image 2" class=rounded-image>
-                <img src="предметы\Iron_Branch_icon.webp" alt="Image 3" class=rounded-image>
-                <img src="предметы\quelling_blade.jpg" alt="Image 4" class=rounded-image>
-                <img src="предметы\slippers_of_agility.jpg" alt="Image 5" class=rounded-image>
-                <img src="предметы\circlet.jpg" alt="Image 6" class=rounded-image>
-            </div>
-    
-            <div class="section grid-section">
-                <img src="предметы\Power_Treads_icon.webp" alt="Image 10" class=rounded-image>
-                <img src="предметы\Battle_Fury_icon.webp" alt="Image 7" class=rounded-image>
-                <img src="предметы\Manta_Style_icon.webp" alt="Image 8" class=rounded-image>
-                <img src="предметы\Butterfly_icon.webp" alt="Image 9" class=rounded-image>
-                <img src="предметы\Abyssal_Blade_icon.webp" alt="Image 11" class=rounded-image>
-                <img src="предметы\Satanic_icon.webp" alt="Image 12" class=rounded-image>
-            </div>
-    
-            <div class="section grid-section">
-                <img src="предметы\Black_King_Bar_icon.webp" alt="Image 13" class=rounded-image>
-                <img src="предметы\Bloodthorn_icon.webp" alt="Image 14" class=rounded-image>
-                <img src="предметы\Monkey_King_Bar_icon.webp" alt="Image 15" class=rounded-image>
-                <img src="предметы\Eye_of_Skadi_icon.webp" alt="Image 16" class=rounded-image>
-                <img src="предметы\Diffusal_Blade_1_icon.webp" alt="Image 17" class=rounded-image>
-            </div>
-        </div>
-    </body>
-   
-    <main>
-        <section class="skill">
+       <section class="skill">
             <div>
                 <div>
                     <h2 href="#" style="display: inline-block; vertical-align: middle;">Mana break</h2>
@@ -102,8 +149,71 @@
             <p>Создает взрыв на основе дематериализованной маны врага, нанося урон.</p>
             <p><strong>рекомендованный уровень прокачки:</strong>6 12 18</p>
         </section>
-    </main>
+            
+                   
+                `;
+        } else if (imageId === 2) {
+            structureHtml = `
+                <section>
+                    <h1 align="center">Анти-маг</h1>
+                </section>
+                <section>
+                    <h2>Кто такой Анти-маг?</h2>
+                    <p>Анти Маг — это герой, который специализируется на борьбе с эффектом выжигания маны.</p>
+                </section>
+                <div class="container">
+                    <div class="sectiona">
+                        <h2 align='center' class="single-line">Основные предметы</h2>
+                    </div>
+                </div>`;
+        } else if (imageId === 3) {
+            structureHtml = `
+                <section>
+                    <h1 align="center">Анти-маг</h1>
+                </section>
+                <section>
+                    <h2>Кто такой Анти-маг?</h2>
+                    <p>Анти Маг — это герой, который специализируется на борьбе с эффектом выжигания маны.</p>
+                </section>
+                <div class="container">
+                    <div class="sectiona">
+                        <h2 align='center' class="single-line">Ситуативные предметы</h2>
+                    </div>
+                </div>
+                <div class="containera">
+                    <div class="sectionb">
+                        <img src="предметы\Iron_Branch_icon.webp" alt="Image 1" class=rounded-image> 
+                        <img src="предметы\tango.jpg" alt="Image 2" class=rounded-image>
+                        <img src="предметы\Iron_Branch_icon.webp" alt="Image 3" class=rounded-image>
+                        <img src="предметы\quelling_blade.jpg" alt="Image 4" class=rounded-image>
+                        <img src="предметы\slippers_of_agility.jpg" alt="Image 5" class=rounded-image>
+                        <img src="предметы\circlet.jpg" alt="Image 6" class=rounded-image>
+                    </div>
+            
+                    <div class="sectionb">
+                        <img src="предметы\Power_Treads_icon.webp" alt="Image 10" class=rounded-image>
+                        <img src="предметы\Battle_Fury_icon.webp" alt="Image 7" class=rounded-image>
+                        <img src="предметы\Manta_Style_icon.webp" alt="Image 8" class=rounded-image>
+                        <img src="предметы\Butterfly_icon.webp" alt="Image 9" class=rounded-image>
+                        <img src="предметы\Abyssal_Blade_icon.webp" alt="Image 11" class=rounded-image>
+                        <img src="предметы\Satanic_icon.webp" alt="Image 12" class=rounded-image>
+                    </div>
+            
+                    <div class="sectionb">
+                        <img src="предметы\Black_King_Bar_icon.webp" alt="Image 13" class=rounded-image>
+                        <img src="предметы\Bloodthorn_icon.webp" alt="Image 14" class=rounded-image>
+                        <img src="предметы\Monkey_King_Bar_icon.webp" alt="Image 15" class=rounded-image>
+                        <img src="предметы\Eye_of_Skadi_icon.webp" alt="Image 16" class=rounded-image>
+                        <img src="предметы\Diffusal_Blade_1_icon.webp" alt="Image 17" class=rounded-image>
+                    </div>
+                </div>
+                `;
+        }
+
+        document.getElementById('structure').innerHTML = structureHtml;
+        document.getElementById('structure').classList.remove('hidden');
+    }
+</script>
+
 </body>
 </html>
-
-    
