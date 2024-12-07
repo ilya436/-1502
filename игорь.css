@@ -127,8 +127,8 @@ h3 {
 }
 .rounded-imageii {
      border-radius: 15px; 
-     height: 90px;
-     width: 90px;
+     height: auto;
+     width: auto;
 }
              
             
