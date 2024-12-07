@@ -124,7 +124,11 @@ h3 {
                 }
 .rounded-imagei {
      border-radius: 15px; 
-    
+}
+.rounded-imageii {
+     border-radius: 15px; 
+     height: 50px;
+     width: 50px;
 }
              
             
