@@ -130,7 +130,7 @@ h3 {
      height: 80px;
      width: 80px;
 }
- .bu{  
+ .button {  
   transition: transform 0.3s;             
   border: none;
   background-color:#ffffff;
