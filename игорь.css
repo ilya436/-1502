@@ -142,9 +142,10 @@ h3 {
   border-radius: 10px;
   margin-bottom: 20px   ;
         }
-        .button:hover {
-    transform: scale(1.1); /* Увеличиваем размер кнопки на 10% при наведении */
-} 
+        
+.button:hover {
+    transform: scale(1.1); 
+}
              
             
             
