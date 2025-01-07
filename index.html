@@ -2171,7 +2171,98 @@
         </section>
          <button id="backButton"; class='button'; onclick="goBack()">Назад</button>
                 `;
-    } 
+    }  else if (imageId === 24) {
+            structureHtml = `
+                 <section>
+                <h1 align="center">Spectre</h1>
+                </section>
+              
+                    <div class="container">
+                        <div class="sectiona">
+                            <h2 align='center' class="text-center">Начальные предеметы</h2>
+                        </div>
+                        <div class="sectiona">
+                            <h2 align='center' class="text-center">Основные предеметы</h2>
+                        </div>
+                        <div class="sectiona">
+                            <h2 align='center' class="text-center">Ситуативные предеметы</h2>
+                        </div>
+                    </div>          
+                <div class="container">
+                    <div class="section grid-section">
+                        <img src="предметы/quelling_blade.jpg" alt="Image 1"class='rounded-imagei' > 
+                        <img src="предметы/Iron_Branch_icon.webp" alt="Image 3"class='rounded-imagei' >
+                        <img src="предметы/slippers_of_agility.jpg" alt="Image 4" class='rounded-imagei'>
+                        <img src="предметы/tango.jpg" alt="Image 5" class='rounded-imagei'>
+                        <img src="предметы/circlet.jpg" alt="Image 6" class='rounded-imagei'>
+                         <img src="предметы/Iron_Branch_icon.webp" alt="Image 3"class='rounded-imagei' >
+                    </div>
+            
+                    <div class="section grid-section">
+                        <img src="предметы/Power_Treads_icon.webp" alt="Image 10" class='rounded-imagei'>
+                        <img src="предметы/Blade_Mail_icon.webp" alt="Image 7" class='rounded-imagei'>
+                        <img src="предметы/радик.webp" alt="Image 8" class='rounded-imagei'>
+                        <img src="предметы/Manta_Style_icon.webp" alt="Image 9" class='rounded-imagei'>
+                        <img src="предметы/Bloodthorn_icon.webp" alt="Image 11"class='rounded-imagei' >
+                        <img src="предметы/Butterfly_icon.webp" alt="Image 12" class='rounded-imagei'>
+                    </div>
+            
+                    <div class="section grid-section">
+                        <img src="предметы/disperser.jpg" alt="Image 13"class='rounded-imagei' >
+                        <img src="предметы/Abyssal_Blade_icon.webp" alt="Image 14" class='rounded-imagei'>
+                        <img src="предметы/Monkey_King_Bar_icon.webp" alt="Image 15"class='rounded-imagei' >
+                        <img src="предметы/Eye_of_Skadi_icon.webp" alt="Image 16" class='rounded-imagei'>
+                          <img src="предметы/Black_King_Bar_icon.webp" alt="Image 16" class='rounded-imagei'>
+                          <img src="предметы/Sange_and_Yasha_icon.webp" alt="Image 16" class='rounded-imagei'>
+                            
+                    </div>
+                </div>
+       <section class="skill">
+            <div>
+                <div>
+                    <h2 href="#" style="display: inline-block; vertical-align: middle;">Spectral dagger</h2>
+                    <img src="скилы/spectre-spectral-dagger-5334-adf2cc51c63b790b517821c55af3be4c497e07029a565ad05b8250e815fea0bf.jpg" alt="icdf" style="display: inline-block; vertical-align: middle;" class=rounded-imageii>  
+                  </div>                  
+            <div>
+                <p>Герой магически расщепляет свои стрелы , атакуя несколько целей , но при этом нанося меньше урона.</p>
+            <p><strong>рекомендованный уровень прокачки:</strong> 4 8 9 11</p>
+        </section>
+
+        <section class="skill">
+            <div>
+                <div>
+                    <h2 href="#" style="display: inline-block; vertical-align: middle;">Desolate</h2>
+                    <img src="скилы/spectre-desolate-5335-750f7a4501e8c00d155807207e092b10414aa009cba21ffaa5d936866a8251d3.jpg" alt="icon" style="display: inline-block; vertical-align: middle;" class=rounded-imageii>  
+                  </div>                  
+            <div>
+            <p>Выпускает змею которая отскакивает от каж и восстановит долю от маны.</p>
+            <p><strong>рекомендованный уровень прокачки:</strong> 1 3 5 7</p>
+        </section>
+
+        <section class="skill">
+            <div>
+                <div>
+                    <h2 href="#" style="display: inline-block; vertical-align: middle;">Dispersion</h2>
+                    <img src="скилы/spectre-dispersion-5336-3085362efacdc7f891a8dd3a38f6c114f08b76d9ef1a811cff4f16bfd81cccda.jpg" alt="icon" style="display: inline-block; vertical-align: middle;" class='rounded-imageii'>  
+                  </div>                  
+            <div>
+            <p>Герой осыпает тремя стрелами нанося переодически урон и накладывает оцепенение на жертв.</p>
+            <p><strong>рекомендованный уровень прокачки:</strong> 2 13 14 16</p>
+        </section>
+
+        <section class="skill">
+            <div>
+                <div>
+                    <h2 href="#" style="display: inline-block; vertical-align: middle;">Shadow step</h2>
+                    <img src="скилы/spectre-shadow-step-7851-74596eab78b96e142cca69c00bbfa659dbe5d18990d2561c770c6f5009baecef.jpg" alt="icon" style="display: inline-block; vertical-align: middle;" class='rounded-imageii'>  
+                  </div>                  
+            <div>
+            <p>Снижает скорость атаки и передвижение, если жертва смотрит на героя больше двух секунд, она окаменевает.</p>
+            <p><strong>рекомендованный уровень прокачки:</strong> 6 12 18</p>
+        </section>
+         <button id="backButton"; class='button'; onclick="goBack()">Назад</button>
+                `;
+    }
         
 
         document.getElementById('structure').innerHTML = structureHtml;
