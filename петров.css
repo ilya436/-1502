@@ -90,12 +90,13 @@ h1 {
     margin-bottom: 10px;
 }
 
-.rounded-imagei, .rounded-imageii {
+.rounded-imagei, {
     border-radius: 10px; 
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
 }
 .rounded-imageii {
+    border-radius: 10px; 
     height: 40px;
     width: 40px;
 }
