@@ -25,6 +25,12 @@ section {
 h3 {
     margin: 5px 0;
 }
+h2 {
+     font-size: 13px;
+}
+h1 {
+     font-size: 16px;
+}
 
 .image-container {
     display: flex;
@@ -86,6 +92,8 @@ h3 {
 
 .rounded-imagei, .rounded-imageii {
     border-radius: 10px; 
+    height: 40px;
+    width: 40px;
 }
 .rounded-imageii {
     height: 40px;
