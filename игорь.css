@@ -146,7 +146,14 @@ h3 {
 .button:hover {
     transform: scale(1.1); 
 }
-             
+       @media (max-width: 768px) {
+    body {
+        transform: scale(0.8); /* Уменьшение масштаба до 80% */
+        transform-origin: top left; /* Установка точки отсчета для трансформации */
+        width: 125%; /* Увеличение ширины, чтобы избежать обрезки */
+        overflow: hidden; /* Скрытие переполнения */
+    }
+}      
             
             
 
