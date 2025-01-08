@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe9e9;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    margin: 10px 0 20px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-image {
+    border-radius: 15px; 
+    width: 100px; 
+    height: auto; 
+}
+
+.grid-section {
+    margin-bottom: 20px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    margin: 10px 0;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin: 20px; 
+    gap: 10px;
+    width: 100%; /* Изменено для мобильных устройств */
+}
+
+.rounded-image {
+    height: auto;
+    width: 175px;
+    transition: transform 0.3s ease; 
+}
+
+.rounded-image:hover {
+    transform: scale(1.1); 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.section {
+    width: 30%; 
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 10px;
+    justify-content: space-between; 
+    margin-bottom: 20px;
+}
+
+.grid-section img {
+    width: 100%; 
+    height: auto; 
+}
+
+.text-center {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.sectiona {
+    font-size: 15px;
+    height: 75px;
+    width: 100%; /* Изменено для мобильных устройств */
+    display: grid;
+    gap: 10px;
+    justify-content: center; 
+    background-color: #ffe9e9;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button {  
+    transition: transform 0.3s;             
+    border: none;
+    background-color: #ffffff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.button:hover {
+    transform: scale(1.1); 
+}
+
+/* Медиа-запросы для мобильных устройств */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Изменено для вертикального расположения */
+    }
+
+    .section {
+        width: 100%; /* Полная ширина для мобильных устройств */
+    }
+
+    .grid-section {
+        grid-template-columns: repeat(2, 1fr); /* Уменьшено количество колонок */
+    }
+
+    .rounded-image {
+        width: 100px; /* Уменьшено для мобильных устройств */
+    }
+
+    .image-container {
+        margin: 10px; /* Уменьшено для мобильных устройств */
+    }
+}
