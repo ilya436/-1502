@@ -44,13 +44,15 @@ h3 {
 }
 
 .grid-section {
+     background: #fff;
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     gap: 5px;
 }
 
-.grid-section img {
+.grid-section img{
     width: 100%; 
+     background: #fff;
     height: auto; 
 }
 
