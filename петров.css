@@ -8,48 +8,57 @@ body {
 }
 
 section {
-    margin: 10px 0 20px;
+    margin-top: 5px; /* Уменьшено */
+    margin-bottom: 10px; /* Уменьшено */
     background: #ffffff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.rounded-image {
-    border-radius: 15px; 
-    width: 100px; 
-    height: auto; 
+    padding: 10px; /* Уменьшено */
+    border-radius: 6px; /* Уменьшено */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Уменьшено */
+    .rounded-image {
+        border-radius: 10px; /* Уменьшено */
+        width: 80px; /* Уменьшено */
+        height: auto; 
+    }
 }
 
 .grid-section {
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Уменьшено */
     background: #ffffff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px; /* Уменьшено */
+    border-radius: 6px; /* Уменьшено */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Уменьшено */
+    .rounded-image {
+        border-radius: 10px; /* Уменьшено */
+        width: 80px; /* Уменьшено */
+        height: auto; 
+        header {
+            text-align: center;
+        }
+    }
 }
 
 h3 {
-    margin: 10px 0;
+    margin: 5px 0; /* Уменьшено */
 }
 
 .image-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
-    margin: 20px; 
-    gap: 10px;
-    width: 100%; /* Изменено для мобильных устройств */
+    margin: 10px; /* Уменьшено */
+    gap: 5px; /* Уменьшено */
+    width: 100%; /* Изменено для адаптивности */
 }
 
 .rounded-image {
     height: auto;
-    width: 175px;
+    width: 120px; /* Уменьшено */
     transition: transform 0.3s ease; 
+    border-radius: 10px; /* Уменьшено */
 }
 
 .rounded-image:hover {
-    transform: scale(1.1); 
+    transform: scale(1.05); /* Уменьшено */
 }
 
 .container {
@@ -59,16 +68,16 @@ h3 {
 }
 
 .section {
-    width: 30%; 
+    width: 100%; /* Изменено для адаптивности */
 }
 
 .grid-section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(2, 1fr); /* Уменьшено */
     grid-template-rows: repeat(2, 1fr); 
-    gap: 10px;
+    gap: 5px; /* Уменьшено */
     justify-content: space-between; 
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Уменьшено */
 }
 
 .grid-section img {
@@ -78,59 +87,53 @@ h3 {
 
 .text-center {
     text-align: center; 
-    margin-bottom: 20px; 
+    margin-bottom: 10px; /* Уменьшено */
+    display: inline; 
 }
 
 .sectiona {
-    font-size: 15px;
-    height: 75px;
-    width: 100%; /* Изменено для мобильных устройств */
+    font-size: 12px; /* Уменьшено */
+    height: 60px; /* Уменьшено */
+    width: 200px; /* Уменьшено */
     display: grid;
-    gap: 10px;
-    justify-content: center; 
+    gap: 5px; /* Уменьшено */
+    justify-content: space-between; 
     background-color: #ffe9e9;
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px; /* Уменьшено */
+    margin-right: 2px; /* Уменьшено */
+    background: #ffffff;
+    padding: 10px; /* Уменьшено */
+    border-radius: 6px; /* Уменьшено */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Уменьшено */
+    justify-content: center; 
+    header {
+        text-align: center;
+    }
+}
+
+.rounded-imagei {
+    border-radius: 10px; /* Уменьшено */
+}
+
+.rounded-imageii {
+    border-radius: 10px; /* Уменьшено */
+    height: 60px; /* Уменьшено */
+    width: 60px; /* Уменьшено */
 }
 
 .button {  
     transition: transform 0.3s;             
     border: none;
     background-color: #ffffff;
-    padding: 15px 32px;
+    padding: 10px 20px; /* Уменьшено */
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    font-size: 14px; /* Уменьшено */
+    border-radius: 8px; /* Уменьшено */
+    margin-bottom: 10px; /* Уменьшено */
 }
 
 .button:hover {
-    transform: scale(1.1); 
-}
-
-/* Медиа-запросы для мобильных устройств */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Изменено для вертикального расположения */
-    }
-
-    .section {
-        width: 100%; /* Полная ширина для мобильных устройств */
-    }
-
-    .grid-section {
-        grid-template-columns: repeat(2, 1fr); /* Уменьшено количество колонок */
-    }
-
-    .rounded-image {
-        width: 100px; /* Уменьшено для мобильных устройств */
-    }
-
-    .image-container {
-        margin: 10px; /* Уменьшено для мобильных устройств */
-    }
+    transform: scale(1.05); /* Уменьшено */
 }
