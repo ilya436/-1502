@@ -9,6 +9,7 @@ body {
 }
 
 section {
+    margin-left:5px;
     margin: 5px;
     background: #fff;
     padding: 10px;
@@ -47,21 +48,19 @@ h1 {
      margin: 5px;
 }
 
-.section {
-    width: 45%; 
-}
 
 .grid-section {
+    margin-left: 5px;
      background: #fff;
     border-radius: 5px;
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     gap: 5px;
-     margin: 3px;
+     margin: 5px;
 }
 
 .grid-section img{
-    width: 50px; 
+    width: 55px; 
      background: #fff;
     height: 40px;
      margin: 5px;
@@ -75,7 +74,7 @@ h1 {
 
 .sectiona {
     font-size: 10px;
-    height: 65px;
+    height: 70px;
     display: grid;
     gap: 5px;
     background-color: #fff;
