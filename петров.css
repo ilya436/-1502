@@ -9,7 +9,7 @@ body {
 }
 
 section {
-    margin-left:5px;
+
     margin: 5px;
     background: #fff;
     padding: 10px;
@@ -50,7 +50,7 @@ h1 {
 
 
 .grid-section {
-    margin-left: 5px;
+
      background: #fff;
     border-radius: 5px;
     display: grid;
