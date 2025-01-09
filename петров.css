@@ -62,7 +62,7 @@ h1 {
 .grid-section img{
     width: 30px; 
      background: #fff;
-    height: 30px;
+    height: auto;
      margin: 5px;
 }
 
@@ -73,7 +73,7 @@ h1 {
 
 .sectiona {
     font-size: 10px;
-    height: 40px;
+    height: 47px;
     display: grid;
     gap: 5px;
     background-color: #fff;
