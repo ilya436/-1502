@@ -53,6 +53,7 @@ h1 {
 
 .grid-section {
      background: #fff;
+    border-radius: 5px;
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     gap: 5px;
@@ -64,6 +65,7 @@ h1 {
      background: #fff;
     height: auto;
      margin: 5px;
+      border-radius: 15px; 
 }
 
 .text-center {
