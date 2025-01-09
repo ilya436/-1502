@@ -63,7 +63,7 @@ h1 {
 .grid-section img{
     width: 30px; 
      background: #fff;
-    height: auto;
+    height: 30px;
      margin: 5px;
       border-radius: 15px; 
 }
@@ -100,9 +100,9 @@ h1 {
      border-radius: 15px; 
 }
 .rounded-imageii {
-     border-radius: 15px;
-     width: 35px; 
-height: 35px;
+     border-radius: 10px;
+     width: 40px; 
+height: 40px;
     
     
 }
