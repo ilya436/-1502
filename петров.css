@@ -60,9 +60,9 @@ h1 {
 }
 
 .grid-section img{
-    width: 100%; 
+    width: 30px; 
      background: #fff;
-    height: auto;
+    height: 30px;
      margin: 5px;
 }
 
