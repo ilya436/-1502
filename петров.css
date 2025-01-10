@@ -5,114 +5,108 @@ body {
     background-color: #ffe9e9;
     display: flex;
     justify-content: center;
+     font-size: 9px;
 }
 
 section {
-    margin: 10px auto; /* Центрируем секции */
-    background: #ffffff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .rounded-image {
-    border-radius: 15px; 
-    width: 100%; /* Изменяем ширину на 100% для мобильных */
+    border-radius: 10px; 
+    width: 80px; 
     height: auto; 
 }
 
 h3 {
-    margin: 10px 0;
+    margin: 5px 0;
+}
+h2 {
+     font-size: 13px;
+}
+h1 {
+     font-size: 16px;
 }
 
 .image-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; 
-    margin: 20px; 
-    gap: 10px;
-}
-
-.rounded-image {
-    height: auto;
-    width: calc(50% - 10px); /* Уменьшаем ширину для мобильных */
-    transition: transform 0.3s ease; 
-}
-
-.rounded-image:hover {
-    transform: scale(1.1); 
+    margin: 10px; 
+    gap: 5px;
 }
 
 .container {
     display: flex;
-    flex-direction: column; /* Изменяем направление на колонку для мобильных */
+    justify-content: space-between;
     width: 100%;
+     margin: 5px;
 }
 
 .section {
-    width: 100%; /* Устанавливаем ширину на 100% */
+    width: 45%; 
 }
 
 .grid-section {
+     background: #fff;
+    border-radius: 5px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Уменьшаем количество колонок для мобильных */
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 5px;
+     margin: 5px;
 }
 
-.grid-section img {
-    width: 100%; 
-    height: auto; 
+.grid-section img{
+    width: 30px; 
+     background: #fff;
+    height: 30px;
+     margin: 5px;
+    
+      border-radius: 10px; 
 }
 
 .text-center {
     text-align: center; 
-    margin-bottom: 20px; 
+    margin-bottom: 10px; 
 }
 
 .sectiona {
-    font-size: 15px;
-    height: auto; /* Убираем фиксированную высоту */
-    width: calc(100% - 6px); /* Устанавливаем ширину на 100% с учетом отступов */
+    font-size: 10px;
+    height: 50px;
     display: grid;
-    gap: 10px;
-    background-color: #ffffff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.rounded-imagei,
-.rounded-imageii {
-     border-radius: 15px; 
-     height: auto; /* Убираем фиксированную высоту */
-     width: calc(25% - 6px); /* Устанавливаем ширину на четверть экрана */
+    gap: 5px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+     margin: 7px;
 }
 
 .button {  
-   transition: transform 0.3s;             
-   border: none;
-   background-color:#ffffff;
-   padding: 10px; /* Уменьшаем отступы для мобильных */
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 14px; /* Уменьшаем размер шрифта для мобильных */
-   border-radius: 10px;
-   margin-bottom: 20px;
-}
-        
-.button:hover {
-   transform: scale(1.1); 
+    transition: transform 0.3s;             
+    border: none;
+    background-color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 5px;
+    margin: 10px;
 }
 
+.rounded-imagei {
+    
+     border-radius: 10px; 
+     width: 30px; 
+height: 30px;
+}
+.rounded-imageii {
+     border-radius: 10px;
+     width: 40px; 
+height: 40px;
 
 
-   .rounded-image {
-       width: calc(100% - 20px); /* Ширина изображений на маленьких экранах */
-   }
-
-   .button {
-       font-size: 12px; /* Еще меньше шрифт для кнопок на маленьких экранах */
-       padding: 8px; /* Уменьшаем отступы кнопок */
-   }
 }
