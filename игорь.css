@@ -154,29 +154,7 @@ h3 {
         overflow: hidden; /* Скрытие переполнения */
     
 }      
-/* Для мобильных устройств */
-@media (max-width: 600px) {
-    
-        transform: scale(0.8); /* Уменьшение масштаба до 80% */
-        transform-origin: top left; /* Установка точки отсчета */
-    
-}
 
-/* Для планшетов */
-@media (min-width: 601px) and (max-width: 1024px) {
-   
-        transform: scale(0.9); /* Уменьшение масштаба до 90% */
-        transform-origin: top left; /* Установка точки отсчета */
-    
-}
-
-/* Для десктопов */
-@media (min-width: 1025px) {
-
-        transform: scale(1); /* Масштаб 100% */
-        transform-origin: top left; /* Установка точки отсчета */
-    
-}
 
             
             
