@@ -64,7 +64,10 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     gap: 5px;
-    margin: 5px;
+    margin-right: 5px;
+    margin-left:7px;
+    margin-top:7px;
+    margin-bottom: 7px; 
 }
 
 .grid-section img{
