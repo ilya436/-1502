@@ -9,7 +9,10 @@ body {
 }
 
 section {
-    margin: 5px;
+   margin-right: 5px;
+    margin-left:7px;
+    margin-top:7px;
+    margin-bottom: 7px; 
     background: #fff;
     padding: 10px;
     border-radius: 5px;
