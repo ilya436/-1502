@@ -159,10 +159,7 @@ h3 {
 }
 
 section {
-       margin-top: 5px;
-      margin-bottom: 5px;
-    margin-right: 0 auto;
-    margin-left: 10px;
+       margin: 0auto;
     background: #fff;
     padding: 10px;
     border-radius: 5px;
