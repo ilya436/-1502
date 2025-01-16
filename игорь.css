@@ -197,7 +197,7 @@ h1 {
 .container {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 75%;
       
     margin: 0 auto;
 }
@@ -217,7 +217,7 @@ h1 {
     margin-left:5px;
     margin-top:7px;
     margin-bottom: 7px;
-    width:30%;
+    width:20%;
 }
 
 .grid-section img{
