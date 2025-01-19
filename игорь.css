@@ -216,8 +216,8 @@ h1 {
     grid-template-columns: repeat(2, 1fr); 
     gap: 5px;
     
-    margin-top:7px;
-    margin-bottom: 7px;
+    margin:5px;
+  
     width:33%;
 }
 
