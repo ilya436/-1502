@@ -215,9 +215,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     gap: 5px;
-     margin: 5px;
-    margin-right: 7px;
-    margin-left:5px;
+    
     margin-top:7px;
     margin-bottom: 7px;
     width:33%;
