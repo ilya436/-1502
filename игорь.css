@@ -78,7 +78,7 @@ h3 {
         display: flex;
         justify-content: space-between;
         width: 100%;
-        background:#000;
+      
     }
     
     .section {
@@ -199,7 +199,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     width: 90%;
-      
+        background:#000;
    margin-left:10px;
       margin-top:5px;
       margin-bottom:5px;
