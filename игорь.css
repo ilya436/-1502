@@ -198,8 +198,7 @@ h1 {
 .container {
     display: flex;
     justify-content: space-between;
-    width: 98%;
-      
+    width: 97.5%;
    margin-left:5px;
       margin-top:5px;
       margin-bottom:5px;
